@@ -1,10 +1,10 @@
 {
-    "name": "edition-WDZ",
-    "description": "A clean, minimal newsletter theme for the Ghost publishing platform. Adaptated for Wedreadz",
+    "name": "edition",
+    "description": "A clean, minimal newsletter theme for the Ghost publishing platform",
     "version": "1.0.0",
+    "private": true,
     "engines": {
-        "ghost": ">=4.0.0",
-        "ghost-api": "v4"
+        "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
@@ -96,11 +96,6 @@
                 "default": "Expanded",
                 "group": "homepage"
             },
-            "show_share_links": {
-                "type": "boolean",
-                "default": true,
-                "group": "post"
-            },
             "show_author": {
                 "type": "boolean",
                 "default": true,
@@ -116,25 +111,22 @@
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
-        "test:ci": "gscan --fatal --verbose .",
         "zip": "gulp zip"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.2",
+        "@tryghost/shared-theme-assets": "1.2.0",
+        "autoprefixer": "10.4.13",
         "beeper": "2.1.0",
-        "cssnano": "5.1.1",
-        "gscan": "4.22.0",
+        "cssnano": "5.1.14",
+        "gscan": "4.34.0",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.1",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.4.8",
+        "postcss": "8.4.18",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.0"
-    },
-    "browserslist": [
-        "defaults"
-    ]
+    }
 }

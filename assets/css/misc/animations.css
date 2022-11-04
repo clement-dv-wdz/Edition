@@ -14,7 +14,7 @@
     }
 
     0% {
-        opacity: 0%;
+        opacity: 0;
         transform: scale3d(0.7, 0.7, 0.7);
     }
 
@@ -23,7 +23,7 @@
     }
 
     to {
-        opacity: 100%;
+        opacity: 1;
         transform: scale3d(1, 1, 1);
     }
 }
@@ -35,16 +35,16 @@
 
 @keyframes zoomOut {
     from {
-        opacity: 100%;
+        opacity: 1;
     }
 
     50% {
-        opacity: 0%;
+        opacity: 0;
         transform: scale3d(0.7, 0.7, 0.7);
     }
 
     to {
-        opacity: 0%;
+        opacity: 0;
     }
 }
 

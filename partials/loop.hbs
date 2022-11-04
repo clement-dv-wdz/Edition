@@ -1,4 +1,5 @@
 <article class="feed {{post_class}}" data-month="{{date format="MMMM YYYY"}}">
+
     <div class="feed-calendar">
         <div class="feed-calendar-month">
             {{date published_at format="MMM"}}
@@ -32,17 +33,22 @@
                 {{date published_at}}
             </time>
             <div class="feed-visibility feed-visibility-{{visibility}}">
-                {{> icons/star}}
+                {{> "icons/star"}}
             </div>
             {{#if reading_time}}
                 <div class="feed-length">
                     {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}
                 </div>
             {{/if}}
+            {{#if @site.comments_enabled}}
+                {{comment_count autowrap="div" class="feed-comments"}}
+            {{/if}}
             <div class="feed-icon">
-                {{> icons/chevron-right}}
+                {{> "icons/chevron-right"}}
             </div>
         </div>
     </div>
+
     <a class="u-permalink" href="{{url}}" aria-label="{{title}}"></a>
+
 </article>

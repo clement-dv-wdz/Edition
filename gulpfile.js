@@ -6,8 +6,8 @@ const livereload = require('gulp-livereload');
 const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const zip = require('gulp-zip');
 const beeper = require('beeper');
+const zip = require('gulp-zip');
 
 // postcss plugins
 const easyimport = require('postcss-easy-import');
@@ -51,6 +51,8 @@ function css(done) {
 function js(done) {
     pump([
         src([
+            'node_modules/@tryghost/shared-theme-assets/assets/js/lib/**/*.js',
+            'node_modules/@tryghost/shared-theme-assets/assets/js/main.js',
             'assets/js/lib/*.js',
             'assets/js/main.js'
         ], {sourcemaps: true}),

@@ -1,13 +1,12 @@
-.cover {
+body:not(.with-full-cover) .cover {
     margin-top: 9vmin;
 }
 
 .with-full-cover .cover {
     position: relative;
     display: flex;
-    overflow: hidden;
-    margin-top: calc(var(--navbar-height) * -1);
     height: 100vh;
+    overflow: hidden;
 }
 
 .with-full-cover .cover.half {
@@ -15,20 +14,20 @@
 }
 
 .with-full-cover .cover::before {
-    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 10;
+    content: "";
     background-color: #000;
-    opacity: 30%;
+    opacity: 0.3;
     transition: opacity 1.5s ease;
 }
 
 .cover.image-loading::before {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .cover-image {
@@ -45,15 +44,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 720px;
     margin: auto;
-    max-width: calc(720px + 8vw);
     text-align: center;
 }
 
 .cover-description {
-    font-size: 3.5rem;
-    line-height: 1.3;
+    font-size: 3.6rem;
     font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
 }
 
 .has-serif-title .cover-description {
@@ -74,9 +75,9 @@
 }
 
 .cover-form {
-    margin-top: 4.5rem;
-    max-width: 480px;
     width: 100%;
+    max-width: 480px;
+    margin-top: 4.5rem;
 }
 
 .cover-form input {
@@ -84,8 +85,8 @@
 }
 
 .with-full-cover .cover-form input {
-    border-color: #e6e6e6;
     background-color: #fff;
+    border-color: transparent;
 }
 
 .cover-form .form-button {
@@ -97,9 +98,9 @@
     bottom: 40px;
     left: 50%;
     z-index: 10;
-    margin-left: -20px;
     width: 40px;
     height: 40px;
+    margin-left: -20px;
 }
 
 .cover.half .cover-arrow {
@@ -107,10 +108,9 @@
 }
 
 .cover-arrow .icon {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     color: #fff;
-    transform: rotate(90deg);
 }
 
 @media (max-width: 767px) {
@@ -123,12 +123,4 @@
     .menu-opened .cover {
         margin-top: 0;
     }
-}
-
-.cover-credit {
-	position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: var(--button-shadow-color-normal);
-	margin: 0;
 }
