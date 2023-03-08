@@ -1,29 +1,30 @@
-<div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style "Half screen"}} half{{/match}}">
+<div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style " Half screen"}}
+    half{{/match}}">
     {{#if @site.cover_image}}
         <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
     {{/if}}
 
     <div class="cover-content container">
         {{#if @site.description}}
-            <div class="cover-description">
-                {{#if @custom.email_signup_text}}
-                    {{@custom.email_signup_text}}
-                {{else}}
-                    {{@site.description}}
-                {{/if}}
-            </div>
+        <div class="cover-description">
+            {{#if @custom.email_signup_text}}
+                {{@custom.email_signup_text}}
+            {{else}}
+                {{@site.description}}
+            {{/if}}
+        </div>
         {{/if}}
 
-		<a class="form-wrapper button cover-form" href="https://app.wedreadz.fr/" style="
+        <a class="form-wrapper button cover-form" href="https://app.wedreadz.fr/" style="
 			background-color: var(--black-color);
 			color: var(--lighter-gray-color);
 			border-radius: 36px;
 			border-color: var(--link-color);
 		">Réserver maintenant
-			<span style="position: absolute; right: 2rem; color: var(--link-color);">
-				{{> icons/telegram}}
-			</span>
-		</a>
+            <span style="position: absolute; right: 2rem; color: var(--link-color);">
+                {{> icons/telegram}}
+            </span>
+        </a>
     </div>
 
     <button aria-hidden="true" class="button-icon cover-arrow">
