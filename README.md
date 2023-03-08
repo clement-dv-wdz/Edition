@@ -1,4 +1,13 @@
-# Edition
+## Instructions pour David
+### Ou trouver les informations utiles ?
+
+- Contenu du call to action en page d'accueil: partials/cover.hbs --> Ligne 23
+- Contenu du bouton de contact: partials/phone-btn.hbs --> Ligne 5
+
+La plupart des contenus se trouvent dans le dossier Partials. Chaque fichier décrit une petite partie des pages.
+
+---
+# Edition Wedreadz
 
 The newsletter theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Edition! If you're just looking to download the latest release, download the theme [here](https://github.com/TryGhost/Edition/archive/refs/heads/main.zip).
 
