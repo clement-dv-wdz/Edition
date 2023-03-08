@@ -6,6 +6,20 @@
 
 La plupart des contenus se trouvent dans le dossier Partials. Chaque fichier décrit une petite partie des pages.
 
+### Comment éditer le contenu ?
+
+Sur la page de chaque fichier, tu peux éditer le contenu en cliquant sur l'icone en haut à droite (à côté de RAW / BLAME). Une fois en mode édition, tape le contenu souhaité.
+
+Pour sauvegarder ces changements, en bas de la page, le système demande 3 choses:
+
+- Un titre: pour se rappeler ce que l'on a fait et pourquoi
+- Une description: facultatif
+- Sur la branche *main* ou sur une nouvelle: toujours choisir *main*
+
+### Comment activer le changement ?
+
+Au bout d'une minute environ, le thème est déployé sur la prod avec un nom spécifique (edition-wdz-YYYY.MM.DD)
+
 ---
 # Edition Wedreadz
 
