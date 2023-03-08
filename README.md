@@ -1,13 +1,8 @@
 # Edition
 
-The newsletter theme for [Ghost](https://github.com/TryGhost/Ghost). A beautiful way to share stories with your growing audience.
+The newsletter theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Edition! If you're just looking to download the latest release, download the theme [here](https://github.com/TryGhost/Edition/archive/refs/heads/main.zip).
 
-**Demo: https://edition.ghost.io**
-
-# Instructions
-
-1. [Download this theme](https://github.com/TryGhost/Edition/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+&nbsp;
 
 # Development
 
@@ -18,20 +13,21 @@ Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'
 yarn
 
 # Run build & watch for changes
-yarn dev
+$ yarn dev
 ```
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
-The `zip` Gulp task packages the theme files into `dist/edition.zip`, which you can then upload to your site.
+The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
 
 ```bash
+# create .zip file
 yarn zip
 ```
 
-# Contribution
+# PostCSS Features Used
 
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 
 # Copyright & License
 

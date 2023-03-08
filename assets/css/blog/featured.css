@@ -1,6 +1,5 @@
 .featured-wrapper {
     padding-top: 6vmin;
-    margin-top: 3rem;
 }
 
 .featured-wrapper .post {
@@ -15,8 +14,6 @@
     margin-bottom: 0;
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.005em;
 }
 
 .has-serif-title .featured-wrapper .post-title {
@@ -24,18 +21,18 @@
 }
 
 .featured-title {
-    padding-bottom: 1rem;
     margin-bottom: 4.5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--light-gray-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
 
 .featured-feed {
-    opacity: 0;
+    opacity: 0%;
 }
 
 .featured-feed.tns-slider {
-    opacity: 1;
+    opacity: 100%;
 }
