@@ -18,7 +18,9 @@ Pour sauvegarder ces changements, en bas de la page, le système demande 3 chose
 
 ### Comment activer le changement ?
 
-Au bout d'une minute environ, le thème est déployé sur la prod avec un nom spécifique (edition-wdz-YYYY.MM.DD)
+Au bout d'une minute environ, le thème est déployé sur la prod avec un nom spécifique (edition-wdz-YYYY.MM.DD). Il faut aller dans l'admin --> Design --> Change theme --> Advanced --> Activate sur le theme souhaité.
+
+Ce système est contraignant mais te permettra de revenir au dernier thème en date très rapidement s'il y a un bug ou un problème.
 
 ---
 # Edition Wedreadz
